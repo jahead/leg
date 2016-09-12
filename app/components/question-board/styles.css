@@ -1,0 +1,17 @@
+.question-board {
+	width: 25%;
+}
+
+.wrap-flexbox {
+  bottom: 0px;
+  width: 100%;
+  position: fixed;
+  display: flex;                /* [1] */ 
+  justify-content: center;      /* [2] */ 
+  min-width: 740px;
+}
+
+.inner-flexbox {
+  align-self: center;        
+}
+
