@@ -2,11 +2,12 @@ import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
 import ReactMarkdown from 'react-markdown';
 
+import RouterActions from '../../actions/routerActions'
+
 import styles from './styles.css';
 import GameData from '../../data/game-data'
-import {browserHistory} from 'react-router';
+
 import DialogBox from '../../components/dialog-box'
-import gameInformation from '../game-information'
 
 const mapStateToProps = (state) => {
     return {
@@ -15,7 +16,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch, ownProps) => {
     return {
-        onClick_getStart: () => browserHistory.push(gameInformation.Path)
+        onClick_getStart: () => dispatch(RouterActions.gotoGameInformationPage())
     }
 }
 

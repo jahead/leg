@@ -15,6 +15,7 @@ import QuestionResult from './containers/question-result';
 import CourtRoom from './containers/court-room';
 import GameInformation from './containers/game-information';
 import GameForeword from './containers/game-foreword';
+import GameFinish from './containers/game-finish';
 
 const history = syncHistoryWithStore(browserHistory, store);
 
@@ -28,6 +29,7 @@ render((
                 <Route path={QuestionResult.Path} component={QuestionResult}/>
                 <Route path={AnswerList.Path} component={AnswerList}/>
                 <Route path={CourtRoom.Path} component={CourtRoom}/>
+                <Route path={GameFinish.Path} component={GameFinish}/>
             </Route>
         </Router>
     </Provider>

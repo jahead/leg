@@ -11,10 +11,12 @@ import GameData from '../../data/game-data';
 import styles from './styles.css';
 
 import RouterActions from '../../actions/routerActions';
+import GameActions from '../../actions/gameActions';
 
 const mapStateToProps = (state, ownProps) => {
+    const {game} = state;
     return {
-        courtRoomId: Number.parseInt(ownProps.params.id)
+        game: game
 
     }
 }
@@ -22,19 +24,16 @@ const mapStateToProps = (state, ownProps) => {
 const mapDispatchToProps = (dispatch, ownProps) => {
     const courtRoomId = Number.parseInt(ownProps.params.id);
     return {
-        onClick_nextQuestion: () => 
-        {
-            if(courtRoomId < GameData.Scene.length - 1 )
-                dispatch(RouterActions.gotoCourtRoom(courtRoomId + 1))
-            else
-                dispatch(RouterActions.gotoFinish())
+        onClick_restart: () => {
+            dispatch(GameActions.restart())
+            dispatch(RouterActions.gotoCourtRoom(0))
         }
     }
 }
 
-class QuestionResult extends React.Component {
-    static BasePath = '/questionResult/';
-    static Path = '/questionResult/:id';
+class GameFinish extends React.Component {
+    static BasePath = '/gameFinish/';
+    static Path = '/gameFinish/';
 
     static PropTypes = {
 
@@ -48,31 +47,30 @@ class QuestionResult extends React.Component {
     }
 
     render() {
-        const { courtRoomId } = this.props;
-        const screneId = GameData.Scene[courtRoomId].id;
-        const question = GameData.Questions.filter(ele => ele.scene === screneId)[0];
-        const answer = question.options.filter(ele => ele.id === question.answer)[0];
-        const reason = question.reason;
-
+        const { game } = this.props;
+        const nQuestions = GameData.Questions.length;
         return (
             <div className={styles.view}>
                 <div className={styles['wrap-flexbox']}>
                     <Card shadow={0} className={styles['inner-flexbox'] + ' ' + styles['content']}>
-                        <CardTitle style={{ color: '#fff', height: '176px', background: 'black' }}>{question.question}</CardTitle>
+                        <CardTitle style={{ color: '#fff', height: '176px', background: 'black' }}>You finished!</CardTitle>
                         <CardText >
                             <Grid>
-                                <Cell col={12}>
-                                    {answer.text}
+                                <Cell col={6}>
+                                    You have finished the game, thank you for playing
                                 </Cell>
-                            </Grid>
-                            <Grid>
-                                <Cell col={12}>
-                                    {reason}
+                                <Cell col={6}>
+                                    <span>
+                                        <h3> Your Score! </h3>
+                                    </span>
+                                    <span>
+                                        <h1> {game.score} /{nQuestions} </h1>
+                                    </span>
                                 </Cell>
                             </Grid>
                         </CardText>
                         <CardActions>
-                            <Button colored style={{float:'right'}} onClick={this.props.onClick_nextQuestion}>Next</Button>
+                            <Button colored style={{ float: 'right' }} onClick={this.props.onClick_restart}>Restart</Button>
                         </CardActions>
                     </Card>
                 </div>
@@ -81,9 +79,9 @@ class QuestionResult extends React.Component {
     }
 }
 
-QuestionResult = connect(
+GameFinish = connect(
     mapStateToProps,
     mapDispatchToProps
-)(QuestionResult);
+)(GameFinish);
 
-export default QuestionResult;
+export default GameFinish;

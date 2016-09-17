@@ -2,9 +2,10 @@ import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
 import ReactMarkdown from 'react-markdown';
 
+import RouterActions from '../../actions/routerActions';
+
 import styles from './styles.css';
 import GameData from '../../data/game-data'
-import {browserHistory} from 'react-router';
 import DialogBox from '../../components/dialog-box'
 import courtRoom from '../court-room'
 
@@ -15,11 +16,14 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch, ownProps) => {
     return {
-        onClick_next: () => browserHistory.push('courtRoom/1')
+        onClick_next: () => {
+            console.log('b');
+            dispatch(RouterActions.gotoCourtRoom(0))
+        }
     }
 }
 
-class GameStart extends React.Component {
+class GameForeword extends React.Component {
     static Path = '/foreword';
 
     static PropTypes = {
@@ -44,9 +48,9 @@ class GameStart extends React.Component {
     }
 }
 
-GameStart = connect(
+GameForeword = connect(
     mapStateToProps,
     mapDispatchToProps
-)(GameStart);
+)(GameForeword);
 
-export default GameStart;
+export default GameForeword;

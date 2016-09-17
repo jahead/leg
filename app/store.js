@@ -1,8 +1,9 @@
-import { routerReducer } from 'react-router-redux';
+import { routerReducer, routerMiddleware, push } from 'react-router-redux';
 import { createStore, combineReducers, applyMiddleware } from 'redux';
-
+import { browserHistory } from 'react-router'
+import GameReducer from './reducers/gameReducer';
 // Add the reducer to your store on the `routing` key
-let middlewares = [] 
+let middlewares = []
 
 
 if (process.env.NODE_ENV === 'development') {
@@ -11,9 +12,11 @@ if (process.env.NODE_ENV === 'development') {
   middlewares.push(logger);
 }
 
+middlewares.push(routerMiddleware(browserHistory));
 
 let reducer = combineReducers({
-    routing: routerReducer,
+  game: GameReducer,
+  routing: routerReducer,
 });
 
 
