@@ -6589,7 +6589,7 @@
       return _react2.default.createElement(
           'div',
           { className: _styles2.default['wrap-flexbox'] },
-          _react2.default.createElement('img', { src: '/images/Accused/Accused.png', className: 'png ' + _styles2.default['inner-flexbox'] + ' ' + _styles2.default.accused })
+          _react2.default.createElement('img', { src: '/leg/images/Accused/Accused.png', className: 'png ' + _styles2.default['inner-flexbox'] + ' ' + _styles2.default.accused })
       );
   };
   
@@ -6619,7 +6619,7 @@
       return _react2.default.createElement(
           'div',
           { className: _styles2.default['wrap-flexbox'] },
-          _react2.default.createElement('img', { src: '/images/Auscrest/Auscrest.png', className: 'png ' + _styles2.default['inner-flexbox'] + ' ' + _styles2.default.auscrest })
+          _react2.default.createElement('img', { src: '/leg/images/Auscrest/Auscrest.png', className: 'png ' + _styles2.default['inner-flexbox'] + ' ' + _styles2.default.auscrest })
       );
   };
   
@@ -6649,7 +6649,7 @@
       return _react2.default.createElement(
           'div',
           { className: _styles2.default['wrap-flexbox'] },
-          _react2.default.createElement('img', { src: '/images/Judge/Judge.png', className: 'png ' + _styles2.default['inner-flexbox'] + ' ' + _styles2.default.judge })
+          _react2.default.createElement('img', { src: '/leg/images/Judge/Judge.png', className: 'png ' + _styles2.default['inner-flexbox'] + ' ' + _styles2.default.judge })
       );
   };
   
@@ -6679,7 +6679,7 @@
       return _react2.default.createElement(
           'div',
           { className: _styles2.default['wrap-flexbox'] },
-          _react2.default.createElement('img', { src: '/images/Jury/Jury.png', className: 'png ' + _styles2.default['inner-flexbox'] + ' ' + _styles2.default.jury })
+          _react2.default.createElement('img', { src: '/leg/images/Jury/Jury.png', className: 'png ' + _styles2.default['inner-flexbox'] + ' ' + _styles2.default.jury })
       );
   };
   
@@ -6709,7 +6709,7 @@
       return _react2.default.createElement(
           'div',
           { className: _styles2.default['wrap-flexbox'] },
-          _react2.default.createElement('img', { src: '/images/Lawyers/Lawyers.png', className: 'png ' + _styles2.default['inner-flexbox'] + ' ' + _styles2.default.lawyers })
+          _react2.default.createElement('img', { src: '/leg/images/Lawyers/Lawyers.png', className: 'png ' + _styles2.default['inner-flexbox'] + ' ' + _styles2.default.lawyers })
       );
   };
   
