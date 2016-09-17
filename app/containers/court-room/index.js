@@ -30,8 +30,8 @@ const mapDispatchToProps = (dispatch, ownProps) => {
 }
 
 class CourtRoom extends React.Component {
-    static BasePath = '/courtRoom/';
-    static Path = '/courtRoom/:id';
+    static BasePath = '/leg/courtRoom/';
+    static Path = '/leg/courtRoom/:id';
 
     static PropTypes = {
 

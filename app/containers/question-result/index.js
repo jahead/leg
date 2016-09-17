@@ -33,8 +33,8 @@ const mapDispatchToProps = (dispatch, ownProps) => {
 }
 
 class QuestionResult extends React.Component {
-    static BasePath = '/questionResult/';
-    static Path = '/questionResult/:id';
+    static BasePath = '/leg/questionResult/';
+    static Path = '/leg/questionResult/:id';
 
     static PropTypes = {
 

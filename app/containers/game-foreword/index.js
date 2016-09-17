@@ -24,7 +24,7 @@ const mapDispatchToProps = (dispatch, ownProps) => {
 }
 
 class GameForeword extends React.Component {
-    static Path = '/foreword';
+    static Path = '/leg/foreword';
 
     static PropTypes = {
 

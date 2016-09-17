@@ -20,7 +20,7 @@ const mapDispatchToProps = (dispatch, ownProps) => {
 }
 
 class App extends React.Component {
-    static Path = '/';
+    static Path = '/leg/';
 
     static PropTypes = {
 

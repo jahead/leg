@@ -21,7 +21,7 @@ const mapDispatchToProps = (dispatch, ownProps) => {
 }
 
 class GameStart extends React.Component {
-    static Path = '/start';
+    static Path = '/leg/start';
 
     static PropTypes = {
 

@@ -32,8 +32,8 @@ const mapDispatchToProps = (dispatch, ownProps) => {
 }
 
 class GameFinish extends React.Component {
-    static BasePath = '/gameFinish/';
-    static Path = '/gameFinish/';
+    static BasePath = '/leg/gameFinish/';
+    static Path = '/leg/gameFinish/';
 
     static PropTypes = {
 
