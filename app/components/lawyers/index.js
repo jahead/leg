@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './styles.css';
 
-const Judge = () => {
+const Lawyers = () => {
     return (
         <div className={styles['wrap-flexbox']}>
             <img src="/images/Lawyers/Lawyers.png" className={'png ' + styles['inner-flexbox']+ ' ' + styles.lawyers}>
@@ -10,4 +10,4 @@ const Judge = () => {
     );
 }
 
-export default Judge;
+export default Lawyers;

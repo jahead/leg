@@ -9,8 +9,23 @@
   display: flex;                /* [1] */ 
   justify-content: center;      /* [2] */ 
   min-width: 740px;
-
+  z-index: 2;
 }
+
+.wrap-flexbox:before {
+	border-top: 1.5px solid #FFFFFF;
+	content: "";
+	margin: 0 auto;
+	/* this centers the line to the full width specified */
+	position: absolute;
+	/* positioning must be absolute here, and relative positioning must be applied to the parent */
+	top:80%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+}
+
 
 .inner-flexbox {
   align-self: center;        

@@ -1,5 +1,6 @@
 .jury {
 	width: 50%;
+  z-index: 2;
 }
 
 .wrap-flexbox {

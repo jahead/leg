@@ -20,7 +20,6 @@ const common = {
         'babel-polyfill',
         /* Material Design Lite (https://getmdl.io) */
         '!!style!css!dialog-polyfill/dialog-polyfill.css',
-        '!!style!css!paper-ripple/dist/paper-ripple.min.css',
         '!!style!css!react-mdl/extra/material.min.css',
         'react-mdl/extra/material.min.js',
         /* The main entry point of your JavaScript application */

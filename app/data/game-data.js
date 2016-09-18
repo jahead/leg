@@ -63,7 +63,7 @@ const scene = [
     },
     {
         id: 6,
-        title: "Sexual Assault of a Child",
+        title: "Growing Hydroponic Weed",
         facts: [
             "Man accused of growing and distributing hydroponic weed"
         ],
