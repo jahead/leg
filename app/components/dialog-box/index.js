@@ -7,7 +7,7 @@ const DialogBox = (props) => {
     return (
         <div className={styles['wrap-flexbox']}>
             <Card shadow={0} className={styles['inner-flexbox'] + ' ' + styles['content']}>
-                <CardTitle style={{ color: '#fff', height: '176px', background: 'url(http://www.getmdl.io/assets/demos/welcome_card.jpg) center / cover' }}>Welcome</CardTitle>
+                <CardTitle style={{ color: '#fff', height: '176px', background: 'black' }}>Welcome</CardTitle>
                 <CardText style={{ height: '100%' }}>
                     {props.children}
                 </CardText>
