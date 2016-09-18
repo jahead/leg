@@ -1,0 +1,21 @@
+.witness {
+
+  width: 12%;
+  margin-top: 2.5%;
+  margin-right: 36%;
+}
+
+.wrap-flexbox {
+  top: 15%;
+  width: 100%;
+  position: fixed;
+  display: flex;                /* [1] */ 
+  justify-content: center;      /* [2] */ 
+  min-width: 740px;
+  z-index: 2;
+}
+
+.inner-flexbox {
+  align-self: center;        
+}
+
