@@ -41,7 +41,8 @@ class GameForeword extends React.Component {
         return (
             <div className={styles['wrap-flexbox']}>
                 <DialogBox nextOnClick={this.props.onClick_next} nextText={'Next'}>
-                    <ReactMarkdown source={GameData.GeneralText.Forward}/>
+                    <ReactMarkdown source={GameData.GeneralText.Forward.Quote}/>
+                    <ReactMarkdown source={GameData.GeneralText.Forward.Text}/>
                 </DialogBox>
             </div>
         );

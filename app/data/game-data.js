@@ -1,6 +1,6 @@
 
 const GeneralText = {
-    Intro: "**[H]uman** nature is represented in the witnesses, the counsel, and the jurors. All three, in their weaknesses, have been kept in mind by the law of evidence. The multifold untrustworthinesses of witnesses; the constant partisan zeal, the lurking chicanery, the needless unpreparedness of counsel; the crude reasoning, the strong irrational emotions, the testimonial inexperience of jurors – all these elements have been considered [by the law of evidence and procedure]. In responding to this observation by Wigmore of the influence of ‘human nature’ on the shaping of rules of evidence and procedure, consider whether ‘multifold untrustworthinesses of [a witness]’, ‘partisan zeal’ etc. of counsel applied in your court observations. For example, did counsel seek to rely on the possibility the jury would engage in ‘crude reasoning’? Was a witness assumed to be untrustworthy (correctly or incorrectly)? Crucially, how did any of the assumptions (present or absent) operate with respect to the rules of evidence and procedure and the goals of the trial?",
+    Intro: "**[H]uman** nature is represented in the witnesses, the counsel, and the jurors. All three, in their weaknesses, have been kept in mind by the law of evidence. The multifold untrustworthinesses of witnesses; the constant partisan zeal, the lurking chicanery, the needless unpreparedness of counsel; the crude reasoning, the strong irrational emotions, the testimonial inexperience of jurors – all these elements have been considered [by the law of evidence and procedure].  \n \n  In responding to this observation by Wigmore of the influence of ‘human nature’ on the shaping of rules of evidence and procedure, consider whether ‘multifold untrustworthinesses of [a witness]’, ‘partisan zeal’ etc. of counsel applied in your court observations. For example, did counsel seek to rely on the possibility the jury would engage in ‘crude reasoning’? Was a witness assumed to be untrustworthy (correctly or incorrectly)? Crucially, how did any of the assumptions (present or absent) operate with respect to the rules of evidence and procedure and the goals of the trial?",
     Categories: [
         "* The untrustworthiness of witnesses = is the witness trustworthy? Should their statements be relied upon? Why or why not? Choose from a variety of reasons in the game",
         "* The constant partisan zeal of the counsel  = are they being overly zealous? What rules are they in breach of? (Select in the game)",
@@ -8,7 +8,10 @@ const GeneralText = {
         "* The crude reasoning of the jury = is the reasoning of the jury crude?",
         "* Rules of evidence = what was considered admissible/ not admissible? And for what reasons? What rules apply?"
     ],
-    Forward: "\u201CHuman nature is represented in the witnesses, the counsel, and the jurors. All three, in their weaknesses, have been kept in mind by the law of evidence. The multifold untrustworthinesses of witnesses; the constant partisan zeal, the lurking chicanery, the needless unpreparedness of counsel; the crude reasoning, the strong irrational emotions, the testimonial inexperience of jurors \u2013 all these elements have been considered by the law of evidence and procedure\u201D\r\n-Wigmore in The Treatise (3rd edition, 8c at 262)\r\nIn practice, whether the laws of evidence sufficiently guard against human fallibility is open to question. This is particularly true in the adversarial system in which people are pitted against one another in all their manifold weaknesses. The presence of the jury allows for a performative style of argument that brings qualitative analysis into play. The dangers this presents to a fair trial are checked only by the extent to which a judge can rein in a trial based on the statutory scheme governing the admissibility of evidence.\r\nIn this game, you will be required to assume the role of the judge. You will be given a number of scenarios, based on real court observations. You will then be required to assess the admissibility of what you observe in each. You will be required to base your reasoning on the Australian Uniform Evidence Act. \r\nWhen you have completed all your scenarios you will be given a score as to how well you did. Good luck your honour!"
+    Forward: {
+        Quote: "> Human nature is represented in the witnesses, the counsel, and the jurors. All three, in their weaknesses, have been kept in mind by the law of evidence. The multifold untrustworthinesses of witnesses; the constant partisan zeal, the lurking chicanery, the needless unpreparedness of counsel; the crude reasoning, the strong irrational emotions, the testimonial inexperience of jurors \u2013 all these elements have been considered by the law of evidence and procedure",
+        Text: "-Wigmore in The Treatise (3rd edition, 8c at 262)  \n \n **In practice**, whether the laws of evidence sufficiently guard against human fallibility is open to question. This is particularly true in the adversarial system in which people are pitted against one another in all their manifold weaknesses. The presence of the jury allows for a performative style of argument that brings qualitative analysis into play. The dangers this presents to a fair trial are checked only by the extent to which a judge can rein in a trial based on the statutory scheme governing the admissibility of evidence.  \n \n In this game, you will be required to assume the role of the judge. You will be given a number of scenarios, based on real court observations. You will then be required to assess the admissibility of what you observe in each. You will be required to base your reasoning on the Australian Uniform Evidence Act.   \n \n  When you have completed all your scenarios you will be given a score as to how well you did. Good luck your honour!"
+    }
 }
 const scene = [
     {
@@ -141,6 +144,47 @@ const scene = [
         lawyer: "",
         event: "At the end of a recount, the prosecution asked the following leading question: “at the end of the conversation you said ‘don’t talk shit now, is that correct?’”"
     },
+    {
+        id: 14,
+        title: "Recieving Stolen Goods",
+        facts: [
+            "The cross-examination of a man accused of selling cars he knew to be stolen."
+        ],
+        witness: "cross-examination of the accused",
+        lawyer: "",
+        event: "The prosecutor, in the course of cross-examining the accused, asked “can you make out the number plate in that photograph?”"
+    },
+    {
+        id: 15,
+        title: "Recieving Stolen Goods",
+        facts: [
+            "The cross-examination of a man accused of selling cars he knew to be stolen."
+        ],
+        witness: "cross-examination of the accused",
+        lawyer: "",
+        event: "The crown, during cross-examination and becoming frustrated by the accused’s inability to make out a number plate in a photograph said “can you get your glasses? Did you not think you would need them?” in a condescending manner."
+    },
+    {
+        id: 16,
+        title: "Recieving Stolen Goods",
+        facts: [
+            "The cross-examination of a man accused of selling cars he knew to be stolen."
+        ],
+        witness: "cross-examination of the accused",
+        lawyer: "",
+        event: "The accused is using a translator despite answering the questions in English himself."
+    },
+    {
+        id: 17,
+        title: "Recieving Stolen Goods",
+        facts: [
+            "The cross-examination of a man accused of selling cars he knew to be stolen."
+        ],
+        witness: "cross-examination of the accused",
+        lawyer: "",
+        event: "During the cross-examination, there was an objection to the continual use of leading question. The defence counsel said “can I ask the witness give the evidence not my friend from the bar table?” "
+    },
+
 ]
 
 
@@ -195,7 +239,7 @@ const Questions = [
             }
         ],
         answer: 2,
-        reason: 'The first phone call was deemed relevant  (s 55) as specific people liable of crime were identified and the drugs were referenced. After it is found relevant, the evidence must also be found to have a probative value that outweighs the danger of unfair prejudice to the defendant before it is admitted (s 137). \n The second question, however, was successfully objected to by the defence, as it was not relevant to the facts in issue. What was merely a conversation full of expletives was tendered in order to damage the character of the accused. Evidence of the general bad character of the accused or other party is inadmissible (Attwood v R (1960)102 CLR 353), and does not meet the requirements of relevance under s 55. \n In this instance, the rules of evidence successfully allowed the admission of evidence that was relevant to the commission of the offence whilst removing evidence that was simply a smear on the character of the accused. '
+        reason: 'The first phone call was deemed relevant  (s 55) as specific people liable of crime were identified and the drugs were referenced. After it is found relevant, the evidence must also be found to have a probative value that outweighs the danger of unfair prejudice to the defendant before it is admitted (s 137).  \n \n The second question, however, was successfully objected to by the defence, as it was not relevant to the facts in issue. What was merely a conversation full of expletives was tendered in order to damage the character of the accused. Evidence of the general bad character of the accused or other party is inadmissible (Attwood v R (1960)102 CLR 353), and does not meet the requirements of relevance under s 55.  \n \n In this instance, the rules of evidence successfully allowed the admission of evidence that was relevant to the commission of the offence whilst removing evidence that was simply a smear on the character of the accused. '
     },
     {
         id: 4,
@@ -233,7 +277,7 @@ const Questions = [
             }
         ],
         answer: 2,
-        reason: 'No.  Whether the evidence is relevant (s 55) is arguable. It may be seen as insofar as it establishes a pattern of inappropriate behaviour, but given the vastly different nature of the behaviour, it would be of very low probative value. Therefore it almost certainly won\u2019t be admitted as its probative value is outweighed by the danger of unfair prejudice (s 137). See Neal in which it was held that though evidence about the accused\u2019s unfulfilling sex life was relevant to an alleged child sex offence, the low probative value meant that it was easily knocked out by s 137. \n In this instance. the rules of evidence are asked to perform a difficult function. Arguably, a jury would be in a better position to make a determination about the accused\u2019s guilt if they had all of the evidence that could possibly be admitted. However, given the sexual assault of a child is such an emotive crime, the propensity of the jury to be reactive is heightened. Therefore evidence that has a low probative value but is likely to prejudice a jury against the accused the law has decided should not be admitted. The law here is adjusting to what Wigmore calls the \u201Cstrong, irrational emotions\u201D of the jury. A suspicion of the kind of reasoning the jury will engage in determines the evidence that they are allowed to have before them.'
+        reason: 'Whether the evidence is relevant (s 55) is arguable. It may be seen as insofar as it establishes a pattern of inappropriate behaviour, but given the vastly different nature of the behaviour, it would be of very low probative value. Therefore it almost certainly won\u2019t be admitted as its probative value is outweighed by the danger of unfair prejudice (s 137). See Neal in which it was held that though evidence about the accused\u2019s unfulfilling sex life was relevant to an alleged child sex offence, the low probative value meant that it was easily knocked out by s 137.  \n \n In this instance. the rules of evidence are asked to perform a difficult function. Arguably, a jury would be in a better position to make a determination about the accused\u2019s guilt if they had all of the evidence that could possibly be admitted. However, given the sexual assault of a child is such an emotive crime, the propensity of the jury to be reactive is heightened. Therefore evidence that has a low probative value but is likely to prejudice a jury against the accused the law has decided should not be admitted. The law here is adjusting to what Wigmore calls the \u201Cstrong, irrational emotions\u201D of the jury. A suspicion of the kind of reasoning the jury will engage in determines the evidence that they are allowed to have before them.'
     },
     {
         id: 6,
@@ -378,6 +422,82 @@ const Questions = [
         ],
         answer: 2,
         reason: 'objections can only be made to leading questions during examination in chief or re-examination, not cross examination: s 37(1). By not allowing the convicted man to speak, only to agree or disagree with the propositions he put, the crown effectively excludes any mitigating circumstances that might problematise a simple binary response. For example, he agreed he had maintained contact with one of the other members of the enterprise, but was not allowed to give the context in which this occurred, who had initiated the meeting or what had transpired. This can be partly rectified during a reexamination, but the defence counsel failed to bring it up.'
+    },
+    {
+        id: 14,
+        scene: 14,
+        question: "Is this a fair question?",
+        options: [
+            {
+                id: 1,
+                text: 'Yes.',
+            },
+            {
+                id: 2,
+                text: 'No, it is a leading question.',
+            },
+        ],
+        answer: 1,
+        reason: 'Although this is a leading question, leading questions are allowed in cross-examination except under limited circumstances (s 42). Arguably, however, the photograph itself should have been tendered as evidence. In this case, the accused was unable to read the number plate without the aid of his glasses and retrieving them took valuable time. Additionally, the prosecutor became very frustrated with the accused’s inability to read the number plate unaided. This should not be a matter on which the jury makes an adverse inference about the accused, but this form of questioning allowed them potentially to conclude that he was deliberately evading the question. The fact that the accused knew the number plate in question was important to be established for the prosecution’s line of questioning but this could have been achieved in a way that caused less delay and was less confrontational to the witness.'
+    },
+    {
+        id: 15,
+        scene: 15,
+        question: "Can this be objected to?",
+        options: [
+            {
+                id: 1,
+                text: 'Yes.',
+            },
+            {
+                id: 2,
+                text: 'No,',
+            },
+        ],
+        answer: 2,
+        reason: 'This is probably OK, but it is skirting on the borderline of what is appropriate. The use of belittling language is dealt with in the rules. There is the possibility of objecting to questions tha are “put to the witness in a manner or tone that is belittling, insulting or otherwise inappropriate” (s 41(1)(b)). In this case, the crown presented himself in a way that was hardly going to ingratiate himself to the jury. Overzealous counsels may do more harm to their cause than good by asking questions that fall close to what section 41 will disallow.'
+    },
+    {
+        id: 16,
+        scene: 16,
+        question: "Is this allowable?",
+        options: [
+            {
+                id: 1,
+                text: 'A translator is only available when the accused speaks no English.',
+            },
+            {
+                id: 2,
+                text: 'A translator is always available.',
+            },
+            {
+                id: 3,
+                text: 'Neither of the above.'
+            }
+        ],
+        answer: 3,
+        reason: 'A witness may give evidence about a fact through an interpreter unless the witness can understand and speak the English language sufficiently to enable the witness to understand, and to make an adequate reply to, questions that may be put about the fact (s 30). There are competing considerations: the need for the accused to understand the questioning is balanced against the advantages of witnesses being given more time, the jury potentially making a favourable inference on the basis of the character of the interpreter, or on the basis that they are disadvantaged in the court setting.  \n \n In this case, the accused was able to answer some questions immediately in English but other answers required greater conferral with the translator. The fact that the jury was able to see that he spoke some English may have acted against his interests and allowed them to form the view that he was using the translator as a delay tactic in some circumstances. To avoid this impression, defence counsels should advise their clients to be consistent in their decision with respect to translator. The judge advised the accused to use his translator consistently, presumably to avoid the possibility was answering a question he only partly understood and also to avoid the jury drawing any of the unfavourable inferences listed above.'
+    },
+    {
+        id: 17,
+        scene: 17,
+        question: "Can the defence object to the continual use of leading questions during cross-examination?",
+        options: [
+            {
+                id: 1,
+                text: 'Yes',
+            },
+            {
+                id: 2,
+                text: 'No',
+            },
+            {
+                id: 3,
+                text: 'It depends on the circumstances'
+            }
+        ],
+        answer: 3,
+        reason: ' Although generally leading questions are permissible during cross-examination, the court may disallow if they think the point would be better made without leading questions being used (s 42(3)). One of the policy considerations that might be relevant is what effect does it have on the jury to hear testimony in the words of the prosecutor rather than in the words of the accused?  \n \n Unfairness caused to  the accused during the cross-examination may be at least partly rectified during the re-examination which, except where the court gives leaves, is limited to “matters arising out of evidence given by the witness in cross-examination.” (s 39(a)) In this case, the judge acknowledged the defence’s point that leading questions were being used excessively and told the prosecutor to be mindful of this tendency. The interest of justice is served when the evidence can be presented in as clear and accurate a way as possible.'
     },
 ]
 

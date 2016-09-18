@@ -14,10 +14,13 @@ const GameScore = (state = 0, action) => {
     }
 }
 
-const GameManager = (state = 0, action) => {
+const GameManager = (state = { correct: false, score: 0 }, action) => {
+
     switch (action.type) {
         case GameActions.ON_CORRECT_ANSWER:
-            return GameScore(state, GameActions.scoreInc());
+            return { correct: true, score: GameScore(state.score, GameActions.scoreInc()) };
+        case GameActions.ON_INCORRECT_ANSWER:
+            return { correct: false, score: GameScore(state.score, GameActions.scoreInc()) };
         case GameActions.ON_RESTART:
             return GameScore(state, GameActions.scoreRestart());
         default:
@@ -25,7 +28,4 @@ const GameManager = (state = 0, action) => {
     }
 }
 
-export default combineReducers(
-    {
-        score: GameManager
-    })
+export default GameManager

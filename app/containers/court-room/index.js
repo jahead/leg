@@ -166,7 +166,9 @@ class CourtRoom extends React.Component {
                     </div>
                 </div>
                 <Lawyers/>
-                <Button className={styles['next-button']} onClick={this.props.onClick_next} colored>{'next'}</Button>
+                <div className={styles['next-button-wrapper']}>
+                    <Button className={styles['next-button']} onClick={this.props.onClick_next} raised ripple accent>Goto Question</Button>
+                </div>
             </div >
         );
     }

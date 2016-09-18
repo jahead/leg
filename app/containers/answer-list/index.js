@@ -61,7 +61,7 @@ class AnswerList extends React.Component {
         const options = question.options.map(option => {
             return (
                 <ListItem key= {option.id} className={styles['list-item']} onClick={this.props.onClickFac(question.id, option.id, question.answer) }>
-                    <ListItemContent icon="person" >
+                    <ListItemContent icon="star" >
                         {option.text}
                     </ListItemContent>
                 </ListItem>);

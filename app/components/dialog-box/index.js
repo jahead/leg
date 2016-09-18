@@ -11,7 +11,7 @@ const DialogBox = (props) => {
                 <CardText style={{ height: '100%' }}>
                     {props.children}
                 </CardText>
-                <CardActions border>
+                <CardActions border className={styles.actions}>
                     <Button onClick={props.nextOnClick} colored>{props.nextText}</Button>
                 </CardActions>
             </Card>
