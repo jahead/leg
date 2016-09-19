@@ -53,7 +53,7 @@ class GameFinish extends React.Component {
             <div className={styles.view}>
                 <div className={styles['wrap-flexbox']}>
                     <Card shadow={0} className={styles['inner-flexbox'] + ' ' + styles['content']}>
-                        <CardTitle style={{ color: '#fff', height: '176px', background: 'black' }}>You finished!</CardTitle>
+                        <CardTitle style={{ color: '#fff', height: '176px', background: 'black' }}>Addendum</CardTitle>
                         <CardText >
                             <Grid>
                                 <Cell col={6}>

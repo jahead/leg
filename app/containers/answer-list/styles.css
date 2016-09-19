@@ -1,7 +1,6 @@
 .view {
 	background-color: black ;
 	width: 100%;
-	min-width: 740px;
 	overflow: scroll;
 }
 
@@ -36,10 +35,10 @@
 }
 
 .wrap-flexbox {
+  margin-top: 10%;
   width: 100%;
   display: flex; 
   justify-content: center;      /* [2] */  
-  min-width: 740px;
  
 }
 
@@ -47,4 +46,27 @@
   align-self: center;     
 }
 
+
+/*  */
+
+.judge {
+    width: 20%;
+    position: fixed;
+    top: 10;
+    min-width: 230px;
+}
+
+.wrap-judge {
+  top: 15%;
+  width: 100%;
+  position: fixed;
+  display: flex;                /* [1] */ 
+  justify-content: center;      /* [2] */ 
+  z-index: 2;
+}
+
+
+.inner-judge {
+  align-self: center;        
+}
 

@@ -11,6 +11,7 @@ import styles from './styles.css';
 import RouterActions from '../../actions/routerActions';
 import GameActions from '../../actions/gameActions';
 
+import Judge from '../../components/judge';
 
 const mapStateToProps = (state, ownProps) => {
     return {
@@ -69,9 +70,13 @@ class AnswerList extends React.Component {
 
         return (
             <div className={styles.view}>
+                <div className={styles['wrap-judge']}>
+                    <img src="/images/Judge/Judge.png" className={'png ' + styles['inner-judge'] + ' ' + styles.judge}>
+                    </img>
+                </div>
                 <div className={styles['wrap-flexbox']}>
                     <Card shadow={0} className={styles['inner-flexbox'] + ' ' + styles['content']}>
-                        <CardTitle style={{ color: '#fff', height: '176px', background: 'black' }}>{question.question}</CardTitle>
+                        <CardTitle style={{ color: '#fff', height: '200px', background: 'black' }}>{question.question}</CardTitle>
                         <CardText style={{ padding: '0', width: '100%' }}>
                             <List className={styles['list']}>
                                 {options}

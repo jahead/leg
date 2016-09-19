@@ -88,7 +88,7 @@ class QuestionResult extends React.Component {
                 <div className={styles['wrap-flexbox']}>
                     <Card shadow={0} className={styles['inner-flexbox'] + ' ' + styles['content']}>
                         <CardTitle style={{ color: '#fff', height: '176px', background: 'black' }}>{question.question}</CardTitle>
-                        <CardText style={{'width':'98%'}}>
+                        <CardText>
                             {answerHtml}
                             <Grid>
                                 <Cell col={12}>

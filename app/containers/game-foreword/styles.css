@@ -1,17 +1,38 @@
 .content {
-	height: 90%;
-	width: 90%;
+  height: 90%;
+  width: 90%;
 }
+
 
 .wrap-flexbox {
   height: 100%;
   width: 100%;
-  display: flex; 
-  justify-content: center;      /* [2] */  
-  min-width: 740px;
- 
+  display: flex;
+  justify-content: center;
+  /* [2] */
+  min-width: 0px;
 }
 
 .inner-flexbox {
-  align-self: center;     
+  align-self: center;
+}
+
+div.quote blockquote {
+  margin-bottom: 0;
+}
+
+div.quote blockquote p {
+  margin-bottom: 0;
+}
+
+div.quote blockquote::after {
+  margin-left: 100%;
+}
+
+
+
+div.quoteRef p {
+  margin-left: 10%;
+  margin-top: -2%;
+  padding-bottom: 20;
 }

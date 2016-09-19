@@ -17,7 +17,6 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch, ownProps) => {
     return {
         onClick_next: () => {
-            console.log('b');
             dispatch(RouterActions.gotoCourtRoom(0))
         }
     }
@@ -41,8 +40,9 @@ class GameForeword extends React.Component {
         return (
             <div className={styles['wrap-flexbox']}>
                 <DialogBox nextOnClick={this.props.onClick_next} nextText={'Next'}>
-                    <ReactMarkdown source={GameData.GeneralText.Forward.Quote}/>
-                    <ReactMarkdown source={GameData.GeneralText.Forward.Text}/>
+                    <ReactMarkdown source={GameData.GeneralText.Forward.Quote} className={styles.quote}/>
+                    <ReactMarkdown source={GameData.GeneralText.Forward.QuoteRef} className={styles.quoteRef}/>
+                    <ReactMarkdown source={GameData.GeneralText.Forward.Text} />
                 </DialogBox>
             </div>
         );

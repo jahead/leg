@@ -1,7 +1,6 @@
 .view {
 	background-color: black ;
 	width: 100%;
-	min-width: 740px;
 	overflow: scroll;
 }
 
@@ -13,7 +12,6 @@
   width: 100%;
   display: flex; 
   justify-content: center;      /* [2] */  
-  min-width: 740px;
  
 }
 
