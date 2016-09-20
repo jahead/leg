@@ -2,6 +2,7 @@
 .accused {
 	width: 50%;
   z-index: 2;
+  padding-right: 10%;
 }
 
 .wrap-flexbox {
@@ -14,5 +15,5 @@
 
 .inner-flexbox {
   align-self: center;   
-  margin-top: 20%;     
+  margin-top: 20%;    
 }

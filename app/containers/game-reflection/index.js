@@ -22,8 +22,8 @@ const mapDispatchToProps = (dispatch, ownProps) => {
     }
 }
 
-class GameForeword extends React.Component {
-    static Path = '/foreword';
+class GameReflection extends React.Component {
+    static Path = '/reflection';
 
     static PropTypes = {
 
@@ -39,19 +39,21 @@ class GameForeword extends React.Component {
     render() {
         return (
             <div className={styles['wrap-flexbox']}>
-                <DialogBox title={'Welcome'} heightTitle={'176px'} nextOnClick={this.props.onClick_next} nextText={'Next'}>
-                    <ReactMarkdown source={GameData.GeneralText.Forward.Quote} className={styles.quote}/>
-                    <ReactMarkdown source={GameData.GeneralText.Forward.QuoteRef} className={styles.quoteRef}/>
-                    <ReactMarkdown source={GameData.GeneralText.Forward.Text} />
+                <div className={styles['wrap-auscrest']}>
+                    <img src="/images/Auscrest/Auscrest.png" className={'png ' + styles['inner-auscrest'] + ' ' + styles.auscrest}>
+                    </img>
+                </div>
+                <DialogBox title={'Reflection'} nextOnClick={this.props.onClick_next} nextText={'Restart'} className={styles.reflection}>
+                    <ReactMarkdown source={GameData.GeneralText.Reflection} className={styles.quote}/>
                 </DialogBox>
             </div>
         );
     }
 }
 
-GameForeword = connect(
+GameReflection = connect(
     mapStateToProps,
     mapDispatchToProps
-)(GameForeword);
+)(GameReflection);
 
-export default GameForeword;
+export default GameReflection;

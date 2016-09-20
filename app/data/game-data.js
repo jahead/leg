@@ -11,17 +11,19 @@ const GeneralText = {
     Forward: {
         Quote: "> Human nature is represented in the witnesses, the counsel, and the jurors. All three, in their weaknesses, have been kept in mind by the law of evidence. The multifold untrustworthinesses of witnesses; the constant partisan zeal, the lurking chicanery, the needless unpreparedness of counsel; the crude reasoning, the strong irrational emotions, the testimonial inexperience of jurors \u2013 all these elements have been considered by the law of evidence and procedure",
         QuoteRef: "-Wigmore in The Treatise (3rd edition, 8c at 262)",
-        Text: "**In practice**, whether the laws of evidence sufficiently guard against human fallibility is open to question. This is particularly true in the adversarial system in which people are pitted against one another in all their manifold weaknesses. The presence of the jury allows for a performative style of argument that brings qualitative analysis into play. The dangers this presents to a fair trial are checked only by the extent to which a judge can rein in a trial based on the statutory scheme governing the admissibility of evidence.  \n \n In this game, you will be required to assume the role of the judge. You will be given a number of scenarios, based on real court observations. You will then be required to assess the admissibility of what you observe in each. You will be required to base your reasoning on the Australian Uniform Evidence Act.   \n \n  When you have completed all your scenarios you will be given a score as to how well you did. Good luck your honour!"
-    }
+        Text: "In practice, whether the laws of evidence sufficiently guard against human fallibility is open to question. This is particularly true in the adversarial system in which people are pitted against one another in all their manifold weaknesses. The presence of the jury allows for a performative style of argument that brings qualitative analysis into play. The dangers this presents to a fair trial are checked only by the extent to which a judge can rein in a trial based on the statutory scheme governing the admissibility of evidence.  \n \n In this game, you will be required to assume the role of the judge. You will be given a number of scenarios, based on real court observations. You will then be required to assess the admissibility of what you observe in each. You will be required to base your reasoning on the Australian Uniform Evidence Act.   \n \n  When you have completed all your scenarios you will be given a score as to how well you did. Good luck your honour!"
+    },
+    Reflection: "All of the questions in this game are based on real observations and highlight the inherent tensions that exist between the major actors in trials. Wigram’s comment that “[a]ll three [jurors, counsel, witnesses], in their weaknesses, have been kept in mind by the law of evidence” was vindicated in our observations.  \n \n The fact that the UEA is in large part a codification of common law rules, in turn a reaction to the history of trials means that they are well placed to deal with the tensions that actually arise. The great unanswered question is whether juries follow the directions of judges and follow permissible lines of reasons. We observed that the laws of evidence effectively regulated the information that was put in front of them, but about the final judgement they arrive at, one can only speculate and hope."
 }
+
 const scene = [
     {
         id: 1,
         title: "Brothers for Life",
         facts: [
-            "A number of men accused of armed robbery, extortion and the dealing cocaine and ice"
+            "A number of men accused of armed robbery, extortion and the dealing cocaine and ice."
         ],
-        witness: "Cross examination of a crown witness (a police detective)",
+        witness: "Cross examination of a crown witness (a police detective).",
         lawyer: "Who reported the offences allegedly committed by my client to you detective?",
         event: ""
     },
@@ -31,7 +33,7 @@ const scene = [
         facts: [
             "A number of men accused of armed robbery, extortion and the dealing cocaine and ice"
         ],
-        witness: "Cross examination of a crown witness (a police detective)",
+        witness: "Cross examination of a crown witness (a police detective),",
         lawyer: "In your opinion what standard of protection can you offer to those who come forward in cases such as this?",
         event: ""
     },
@@ -39,7 +41,7 @@ const scene = [
         id: 3,
         title: "Possession & Supply of Cocaine",
         facts: [
-            "Cocaine dealing"
+            "Cocaine dealing."
         ],
         witness: "",
         lawyer: "",
@@ -69,9 +71,9 @@ const scene = [
         id: 6,
         title: "Growing Hydroponic Weed",
         facts: [
-            "Man accused of growing and distributing hydroponic weed"
+            "Man accused of growing and distributing hydroponic weed."
         ],
-        witness: "Cross examination of a crown witness (police detective)",
+        witness: "Cross examination of a crown witness (police detective).",
         lawyer: "",
         event: "Defence feigns ignorance “Oh so just to recap so I know I’ve got it right” she then repeated the story with a slight alteration mentioning DNA not fingerprint evidence hoping that the witness would agree to her summation of the facts and not correct the error."
     },
@@ -79,9 +81,9 @@ const scene = [
         id: 7,
         title: "Growing Hydroponic Weed",
         facts: [
-            "Man accused of growing and distributing hydroponic weed"
+            "Man accused of growing and distributing hydroponic weed."
         ],
-        witness: "Cross examination of a crown witness (police detective)",
+        witness: "Cross examination of a crown witness (police detective).",
         lawyer: "",
         event: "The witness often replied, “I believe it was….” And “I’ll have to check that”"
     },
@@ -89,9 +91,9 @@ const scene = [
         id: 8,
         title: "Growing Hydroponic Weed",
         facts: [
-            "Man accused of growing and distributing hydroponic weed"
+            "Man accused of growing and distributing hydroponic weed."
         ],
-        witness: "Cross examination of a crown witness (police detective)",
+        witness: "Cross examination of a crown witness (police detective).",
         lawyer: "",
         event: "The defence keeps asking whether something is the witness’ “understanding”, or whether something was correct “to your knowledge,” thereby seeking to characterize the witness’ testimony as subjective belief rather than objective fact."
     },
@@ -99,9 +101,9 @@ const scene = [
         id: 9,
         title: "Growing Hydroponic Weed",
         facts: [
-            "Man accused of growing and distributing hydroponic weed"
+            "Man accused of growing and distributing hydroponic weed."
         ],
-        witness: "Cross examination of a crown witness (police detective)",
+        witness: "Cross examination of a crown witness (police detective).",
         lawyer: "",
         event: "The defence asked a highly technical question regarding phone tower reception which the witness was unable to answer. She then repeated the question to which the witness replied, “I guess it is then.” "
     },
@@ -109,9 +111,9 @@ const scene = [
         id: 10,
         title: "Growing Hydroponic Weed",
         facts: [
-            "Man accused of growing and distributing hydroponic weed"
+            "Man accused of growing and distributing hydroponic weed."
         ],
-        witness: "Cross examination of a crown witness (police detective)",
+        witness: "Cross examination of a crown witness (police detective).",
         lawyer: "",
         event: "During cross-examination, the defence counsel asked “detective, you neglected to take DNA evidence from the room in which the weed was found, correct?"
     },
@@ -119,9 +121,9 @@ const scene = [
         id: 11,
         title: "Growing Hydroponic Weed",
         facts: [
-            "Man accused of growing and distributing hydroponic weed"
+            "Man accused of growing and distributing hydroponic weed."
         ],
-        witness: "Cross examination of a crown witness (police detective)",
+        witness: "Cross examination of a crown witness (police detective).",
         lawyer: "",
         event: "The defence counsel often asked the detective leading questions, insisting on a yes or no answer instead of allowing the witness to qualify their answer with an explanation"
     },
@@ -129,7 +131,7 @@ const scene = [
         id: 12,
         title: "Joint Criminal Enterprise",
         facts: [
-            "A sentencing hearing of a man convicted of participating in a criminal group, defined as a group formed for the purpose of “obtaining material benefits from conduct that constitutes a serious indictable offence” (Crimes Act 1900 (NSW) s 93S(1)(a)). The convicted man had joined the group after the offence (drug supply) had been committed. His involvement was that of a debt collector."
+            "A sentencing hearing of a man convicted of participating in a criminal group, for the purpose of “obtaining material benefits from conduct that constitutes a serious indictable offence” (Crimes Act 1900 (NSW) s 93S(1)(a))."
         ],
         witness: "A sentencing interview: defence calling convicted man as its own witness.",
         lawyer: "",
@@ -141,47 +143,47 @@ const scene = [
         facts: [
             "A sentencing hearing of a man convicted of participating in a criminal group, defined as a group formed for the purpose of “obtaining material benefits from conduct that constitutes a serious indictable offence” (Crimes Act 1900 (NSW) s 93S(1)(a)). The convicted man had joined the group after the offence (drug supply) had been committed. His involvement was that of a debt collector."
         ],
-        witness: "Cross-examination",
+        witness: "Cross-examination of the accused.",
         lawyer: "",
         event: "At the end of a recount, the prosecution asked the following leading question: “at the end of the conversation you said ‘don’t talk shit now, is that correct?’”"
     },
     {
         id: 14,
-        title: "Recieving Stolen Goods",
+        title: "Receiving Stolen Goods",
         facts: [
-            "The cross-examination of a man accused of selling cars he knew to be stolen."
+            "Man accused of selling cars he knew to be stolen."
         ],
-        witness: "cross-examination of the accused",
+        witness: "Cross-examination of the accused.",
         lawyer: "",
         event: "The prosecutor, in the course of cross-examining the accused, asked “can you make out the number plate in that photograph?”"
     },
     {
         id: 15,
-        title: "Recieving Stolen Goods",
+        title: "Receiving Stolen Goods",
         facts: [
-            "The cross-examination of a man accused of selling cars he knew to be stolen."
+            "Man accused of selling cars he knew to be stolen."
         ],
-        witness: "cross-examination of the accused",
+        witness: "Cross-examination of the accused.",
         lawyer: "",
         event: "The crown, during cross-examination and becoming frustrated by the accused’s inability to make out a number plate in a photograph said “can you get your glasses? Did you not think you would need them?” in a condescending manner."
     },
     {
         id: 16,
-        title: "Recieving Stolen Goods",
+        title: "Receiving Stolen Goods",
         facts: [
-            "The cross-examination of a man accused of selling cars he knew to be stolen."
+            "Man accused of selling cars he knew to be stolen."
         ],
-        witness: "cross-examination of the accused",
+        witness: "Cross-examination of the accused.",
         lawyer: "",
         event: "The accused is using a translator despite answering the questions in English himself."
     },
     {
         id: 17,
-        title: "Recieving Stolen Goods",
+        title: "Receiving Stolen Goods",
         facts: [
-            "The cross-examination of a man accused of selling cars he knew to be stolen."
+            "Man accused of selling cars he knew to be stolen."
         ],
-        witness: "cross-examination of the accused",
+        witness: "Cross-examination of the accused.",
         lawyer: "",
         event: "During the cross-examination, there was an objection to the continual use of leading question. The defence counsel said “can I ask the witness give the evidence not my friend from the bar table?” "
     },
@@ -202,7 +204,7 @@ const Questions = [
             },
             {
                 id: 2,
-                text: 'No, the detective can remain silent about an ongoing investigation',
+                text: 'No, the detective can remain silent about an ongoing investigation.',
             },
         ],
         answer: 2,
@@ -215,11 +217,11 @@ const Questions = [
         options: [
             {
                 id: 1,
-                text: 'Yes',
+                text: 'Yes.',
             },
             {
                 id: 2,
-                text: 'No, opinion evidence is inadmissible as per section 76',
+                text: 'No, opinion evidence is inadmissible as per section 76.',
             },
         ],
         answer: 1,
@@ -232,11 +234,11 @@ const Questions = [
         options: [
             {
                 id: 1,
-                text: 'Yes',
+                text: 'Yes.',
             },
             {
                 id: 2,
-                text: 'No',
+                text: 'No.',
             }
         ],
         answer: 2,
@@ -249,11 +251,11 @@ const Questions = [
         options: [
             {
                 id: 1,
-                text: 'Yes to both',
+                text: 'Yes to both.',
             },
             {
                 id: 2,
-                text: 'No to both',
+                text: 'No to both.',
             },
             {
                 id: 3,
@@ -270,11 +272,11 @@ const Questions = [
         options: [
             {
                 id: 1,
-                text: 'Yes',
+                text: 'Yes.',
             },
             {
                 id: 2,
-                text: 'No',
+                text: 'No.',
             }
         ],
         answer: 2,
@@ -287,11 +289,11 @@ const Questions = [
         options: [
             {
                 id: 1,
-                text: 'Yes',
+                text: 'Yes.',
             },
             {
                 id: 2,
-                text: 'No',
+                text: 'No.',
             }
         ],
         answer: 2,
@@ -304,18 +306,18 @@ const Questions = [
         options: [
             {
                 id: 1,
-                text: 'Yes',
+                text: 'Yes.',
             },
             {
                 id: 2,
-                text: 'No',
+                text: 'No.',
             },
             {
                 id: 3,
                 text: 'That is a matter left for the jury.'
             }
         ],
-        answer: 2,
+        answer: 3,
         reason: 'Where a witness is unable to recall information that is pertinent to the case, the court may grant leave for them to use a document to revive their memory (s 32). Whether the use of a document, or the inability of the witness to recall information, impacts upon the credibility of the witness is ultimately a matter of fact for the jury to decide. In this case, the information that the witness was unable to recall was peripheral to their main evidence so the jury was less likely to draw an unfavourable inference from their inability to remember. Whether they ultimately believe the witness is a matter for the jury to decide.ß',
     },
     {
@@ -325,11 +327,11 @@ const Questions = [
         options: [
             {
                 id: 1,
-                text: 'Yes',
+                text: 'Yes.',
             },
             {
                 id: 2,
-                text: 'No',
+                text: 'No.',
             }
         ],
         answer: 1,
@@ -342,11 +344,11 @@ const Questions = [
         options: [
             {
                 id: 1,
-                text: 'Yes',
+                text: 'Yes.',
             },
             {
                 id: 2,
-                text: 'No',
+                text: 'No.',
             }
         ],
         answer: 2,
@@ -359,15 +361,15 @@ const Questions = [
         options: [
             {
                 id: 1,
-                text: 'Yes',
+                text: 'Yes.',
             },
             {
                 id: 2,
-                text: 'No',
+                text: 'No.',
             }
         ],
         answer: 2,
-        reason: 'cross-examination allowed to ask leading questions (s 42).'
+        reason: 'Cross-examiner allowed to ask leading questions (s 42).'
     },
     {
         id: 11,
@@ -376,15 +378,15 @@ const Questions = [
         options: [
             {
                 id: 1,
-                text: 'Yes',
+                text: 'Yes.',
             },
             {
                 id: 2,
-                text: 'No',
+                text: 'No.',
             },
             {
                 id: 3,
-                text: 'Depends on the circumstances'
+                text: 'Depends on the circumstances.'
             }
         ],
         answer: 3,
@@ -452,7 +454,7 @@ const Questions = [
             },
             {
                 id: 2,
-                text: 'No,',
+                text: 'No.',
             },
         ],
         answer: 2,
@@ -486,19 +488,19 @@ const Questions = [
         options: [
             {
                 id: 1,
-                text: 'Yes',
+                text: 'Yes.',
             },
             {
                 id: 2,
-                text: 'No',
+                text: 'No.',
             },
             {
                 id: 3,
-                text: 'It depends on the circumstances'
+                text: 'It depends on the circumstances.'
             }
         ],
         answer: 3,
-        reason: ' Although generally leading questions are permissible during cross-examination, the court may disallow if they think the point would be better made without leading questions being used (s 42(3)). One of the policy considerations that might be relevant is what effect does it have on the jury to hear testimony in the words of the prosecutor rather than in the words of the accused?  \n \n Unfairness caused to  the accused during the cross-examination may be at least partly rectified during the re-examination which, except where the court gives leaves, is limited to “matters arising out of evidence given by the witness in cross-examination.” (s 39(a)) In this case, the judge acknowledged the defence’s point that leading questions were being used excessively and told the prosecutor to be mindful of this tendency. The interest of justice is served when the evidence can be presented in as clear and accurate a way as possible.'
+        reason: 'Although generally leading questions are permissible during cross-examination, the court may disallow if they think the point would be better made without leading questions being used (s 42(3)). One of the policy considerations that might be relevant is what effect does it have on the jury to hear testimony in the words of the prosecutor rather than in the words of the accused?  \n \n Unfairness caused to  the accused during the cross-examination may be at least partly rectified during the re-examination which, except where the court gives leaves, is limited to “matters arising out of evidence given by the witness in cross-examination.” (s 39(a)) In this case, the judge acknowledged the defence’s point that leading questions were being used excessively and told the prosecutor to be mindful of this tendency. The interest of justice is served when the evidence can be presented in as clear and accurate a way as possible.'
     },
 ]
 

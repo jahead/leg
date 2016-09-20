@@ -15,6 +15,7 @@ import QuestionResult from './containers/question-result';
 import CourtRoom from './containers/court-room';
 import GameForeword from './containers/game-foreword';
 import GameFinish from './containers/game-finish';
+import GameReflection from './containers/game-reflection';
 
 const history = syncHistoryWithStore(browserHistory, store);
 
@@ -25,6 +26,7 @@ render((
             <Route path={App.Path} component={App}>
                 <IndexRoute component={GameForeword}/>
                 <Route path={QuestionResult.Path} component={QuestionResult}/>
+                <Route path={GameReflection.Path} component={GameReflection}/>
                 <Route path={AnswerList.Path} component={AnswerList}/>
                 <Route path={CourtRoom.Path} component={CourtRoom}/>
                 <Route path={GameFinish.Path} component={GameFinish}/>

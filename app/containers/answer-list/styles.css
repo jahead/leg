@@ -1,72 +1,67 @@
 .view {
-	background-color: black ;
-	width: 100%;
-	overflow: scroll;
+  background-color: black;
+  width: 100%;
+  overflow: scroll;
 }
 
-.list-item
-{
-	border-top-color: aliceblue;
-    border-top-style: inset;
-    border-top-width: 1px;
+.list-item {
+  border-top-color: aliceblue;
+  border-top-style: inset;
+  border-top-width: 1px;
 }
 
-.list-item:hover
-{
-	background: lightgray
+.list-item:hover {
+  background: lightgray
 }
 
-.list-item:active
-{
-	background: lightgreen
+.list-item:active {
+  background: lightgreen
 }
 
 .list {
-	margin-top: 0;
-	padding-top: 0;
+  margin-top: 0;
+  padding-top: 0;
 }
 
-.list-content {
-
-}
+.list-content {}
 
 .content {
-	width: 90%;
+  width: 90%;
 }
 
 .wrap-flexbox {
-  margin-top: 10%;
+  margin-top: 338px;
   width: 100%;
-  display: flex; 
-  justify-content: center;      /* [2] */  
- 
+  display: flex;
+  justify-content: center;
+  /* [2] */
 }
 
 .inner-flexbox {
-  align-self: center;     
+  align-self: center;
 }
 
 
 /*  */
 
 .judge {
-    width: 20%;
-    position: fixed;
-    top: 10;
-    min-width: 230px;
+  width: 560px;
+  position: fixed;
+  top: 119px;
+  min-width: 230px;
 }
 
 .wrap-judge {
   top: 15%;
   width: 100%;
   position: fixed;
-  display: flex;                /* [1] */ 
-  justify-content: center;      /* [2] */ 
-  z-index: 2;
+  display: flex;
+  /* [1] */
+  justify-content: center;
+  /* [2] */
+  z-index: 0;
 }
-
 
 .inner-judge {
-  align-self: center;        
+  align-self: center;
 }
-

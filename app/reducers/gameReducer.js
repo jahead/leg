@@ -20,7 +20,7 @@ const GameManager = (state = { correct: false, score: 0 }, action) => {
         case GameActions.ON_CORRECT_ANSWER:
             return { correct: true, score: GameScore(state.score, GameActions.scoreInc()) };
         case GameActions.ON_INCORRECT_ANSWER:
-            return { correct: false, score: GameScore(state.score, GameActions.scoreInc()) };
+            return { correct: false, score: GameScore(state.score, '') };
         case GameActions.ON_RESTART:
             return GameScore(state, GameActions.scoreRestart());
         default:

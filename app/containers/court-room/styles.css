@@ -49,10 +49,12 @@
 }
 
 .lawyer {
-  position: fixed;
-  right: 50%;
-  bottom: 40%;
-  z-index: 4;
+    width: 29%;
+    right: 51%;
+    max-width: 340;
+    bottom: 36%;
+    z-index: 4;
+    position: fixed;
 }
 
 .lawyer-card {
@@ -68,6 +70,15 @@
   z-index: 3;
 }
 
+
+
+.witText div p {
+padding-top: 8%;
+}
+
+.factsText div p {
+  padding-top: 20px 
+}
 
 /*!
  * animate.css -http://daneden.me/animate

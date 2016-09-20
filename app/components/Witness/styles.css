@@ -1,12 +1,12 @@
 .witness {
 
-  width: 12%;
+  width: 11%;
   margin-top: 2.5%;
   margin-right: 36%;
 }
 
 .wrap-flexbox {
-  top: 15%;
+  top: 22%;
   width: 100%;
   position: fixed;
   display: flex;                /* [1] */ 

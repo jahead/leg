@@ -61,7 +61,7 @@ class CourtRoom extends React.Component {
                 <div className={styles.event}>
                     <Card style={{ width: '100%' }}>
                         <CardTitle>
-                            Issue
+                            Evidence in Issue 
                         </CardTitle>
                         <CardText>
                             {screneInformation.event}
@@ -80,11 +80,11 @@ class CourtRoom extends React.Component {
                             <Grid style={{ margin: 0, width: '100%', padding: 0 }}>
                                 <Cell col={4} style={{ 'background-color': '#9E9E9E', margin: 0, padding: '5px 5px 5px 10px', 'min-width': '145px' }}>
                                     <h3>
-                                        Witness:
+                                        Witness
                                     </h3>
                                 </Cell>
-                                <Cell col={8} style={{ margin: 0, padding: '5px' }}>
-                                    <ReactMarkdown source={ '* ' + screneInformation.witness}/>
+                                <Cell col={8} className={styles.witText } style={{ margin: 0, padding: '5px' }}>
+                                    <ReactMarkdown source={ screneInformation.witness}/>
                                 </Cell>
                             </Grid>
                         </CardTitle>
@@ -99,7 +99,7 @@ class CourtRoom extends React.Component {
                         <Grid style={{ margin: 0, width: '100%', padding: 0 }}>
                             <Cell col={3} style={{ 'background-color': '#9E9E9E', margin: 0, padding: '5px 5px 5px 10px', 'min-width': '95px' }}>
                                 <h3>
-                                    Case:
+                                    Case
                                 </h3>
                             </Cell>
                             <Cell col={9} style={{ margin: 0, padding: '5px' }}>
@@ -134,13 +134,13 @@ class CourtRoom extends React.Component {
                 <Card style={{ width: '100%', 'min-height': '0px' }}>
                     <CardTitle  style={{ margin: 0, width: '100%', padding: 0 }}>
                         <Grid style={{ margin: 0, width: '100%', padding: 0 }}>
-                            <Cell col={4} style={{ 'background-color': '#9E9E9E', margin: 0, padding: '5px 5px 5px 10px', 'min-width': '95px' }}>
+                            <Cell col={3} style={{ 'background-color': '#9E9E9E', margin: 0, padding: '5px 5px 5px 10px', 'min-width': '95px' }}>
                                 <h3>
-                                    fact:
+                                    Facts
                                 </h3>
                             </Cell>
-                            <Cell col={8} style={{ margin: 0, padding: '5px' }}>
-                                <ReactMarkdown source={ '* ' + screneInformation.facts[0]}/>
+                            <Cell col={9} className={styles.factsText} style={{ margin: 0, padding: '5px' }}>
+                                <ReactMarkdown source={ '' + screneInformation.facts[0]}/>
                             </Cell>
                         </Grid>
                     </CardTitle>
@@ -167,7 +167,7 @@ class CourtRoom extends React.Component {
                 </div>
                 <Lawyers/>
                 <div className={styles['next-button-wrapper']}>
-                    <Button className={styles['next-button']} onClick={this.props.onClick_next} raised ripple accent>Goto Question</Button>
+                    <Button className={styles['next-button']} onClick={this.props.onClick_next} raised ripple accent>Go to Question</Button>
                 </div>
             </div >
         );

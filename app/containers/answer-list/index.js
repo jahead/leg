@@ -76,8 +76,8 @@ class AnswerList extends React.Component {
                 </div>
                 <div className={styles['wrap-flexbox']}>
                     <Card shadow={0} className={styles['inner-flexbox'] + ' ' + styles['content']}>
-                        <CardTitle style={{ color: '#fff', height: '200px', background: 'black' }}>{question.question}</CardTitle>
-                        <CardText style={{ padding: '0', width: '100%' }}>
+                        <CardTitle style={{ height: '100px', background: 'white', }}>{question.question}</CardTitle>
+                        <CardText style={{ padding: '0', width: '100%', 'min-height': '200px' }}>
                             <List className={styles['list']}>
                                 {options}
                             </List>

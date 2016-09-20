@@ -24,9 +24,9 @@ const mapStateToProps = (state, ownProps) => {
 const mapDispatchToProps = (dispatch, ownProps) => {
     const courtRoomId = Number.parseInt(ownProps.params.id);
     return {
-        onClick_restart: () => {
+        onClick_reflection: () => {
             dispatch(GameActions.restart())
-            dispatch(RouterActions.gotoCourtRoom(0))
+            dispatch(RouterActions.gotoGameReflection())
         }
     }
 }
@@ -53,24 +53,26 @@ class GameFinish extends React.Component {
             <div className={styles.view}>
                 <div className={styles['wrap-flexbox']}>
                     <Card shadow={0} className={styles['inner-flexbox'] + ' ' + styles['content']}>
-                        <CardTitle style={{ color: '#fff', height: '176px', background: 'black' }}>Addendum</CardTitle>
+                        <CardTitle style={{ color: '#fff', height: '176px', background: 'black' }}></CardTitle>
                         <CardText >
                             <Grid>
-                                <Cell col={6}>
-                                    You have finished the game, thank you for playing
+                                <Cell col={12} style={{'text-align':'center',}}>
+                                    You have finished the game, thank you for playing!
                                 </Cell>
-                                <Cell col={6}>
-                                    <span>
-                                        <h3> Your Score! </h3>
+                            </Grid>
+                            <Grid>
+                                <Cell col={12} style={{'text-align':'center'}}>
+                                    <span className={styles.scoreFont}>
+                                        <h3 style={{'font-weight': '600'}}> Your Score </h3>
                                     </span>
                                     <span>
-                                        <h1> {game.score} /{nQuestions} </h1>
+                                        <h1> {game.score}/{nQuestions} </h1>
                                     </span>
                                 </Cell>
                             </Grid>
                         </CardText>
                         <CardActions>
-                            <Button colored style={{ float: 'right' }} onClick={this.props.onClick_restart}>Restart</Button>
+                            <Button colored style={{ float: 'right' }} onClick={this.props.onClick_reflection}>Go to Reflection</Button>
                         </CardActions>
                     </Card>
                 </div>

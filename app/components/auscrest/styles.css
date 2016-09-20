@@ -3,12 +3,13 @@
 }
 
 .wrap-flexbox {
-  top: 2%;
-  width: 100%;
-  position: fixed;
-  display: flex;                /* [1] */ 
-  justify-content: center;      /* [2] */ 
-  min-width: 740px;
+    top: 2%;
+    right: 2%;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    min-width: 740px;
 }
 
 .inner-flexbox {
