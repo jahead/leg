@@ -39,6 +39,10 @@ class GameForeword extends React.Component {
     render() {
         return (
             <div className={styles['wrap-flexbox']}>
+                <div className={styles['wrap-auscrest']}>
+                    <img src="/images/Auscrest/Auscrest.png" className={'png ' + styles['inner-auscrest'] + ' ' + styles.auscrest}>
+                    </img>
+                </div>
                 <DialogBox title={'Welcome'} heightTitle={'176px'} nextOnClick={this.props.onClick_next} nextText={'Next'} className={styles.foreword}>
                     <ReactMarkdown source={GameData.GeneralText.Forward.Quote} className={styles.quote}/>
                     <ReactMarkdown source={GameData.GeneralText.Forward.QuoteRef} className={styles.quoteRef}/>
