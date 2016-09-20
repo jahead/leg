@@ -61,7 +61,7 @@ class CourtRoom extends React.Component {
                 <div className={styles.event}>
                     <Card style={{ width: '100%' }}>
                         <CardTitle>
-                            Evidence in Issue 
+                            Issue 
                         </CardTitle>
                         <CardText>
                             {screneInformation.event}

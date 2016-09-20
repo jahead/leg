@@ -39,10 +39,10 @@ class GameForeword extends React.Component {
     render() {
         return (
             <div className={styles['wrap-flexbox']}>
-                <DialogBox title={'Welcome'} heightTitle={'176px'} nextOnClick={this.props.onClick_next} nextText={'Next'}>
+                <DialogBox title={'Welcome'} heightTitle={'176px'} nextOnClick={this.props.onClick_next} nextText={'Next'} className={styles.foreword}>
                     <ReactMarkdown source={GameData.GeneralText.Forward.Quote} className={styles.quote}/>
                     <ReactMarkdown source={GameData.GeneralText.Forward.QuoteRef} className={styles.quoteRef}/>
-                    <ReactMarkdown source={GameData.GeneralText.Forward.Text} />
+                    <ReactMarkdown source={GameData.GeneralText.Forward.Text} className={styles.text} />
                 </DialogBox>
             </div>
         );

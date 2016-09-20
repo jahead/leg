@@ -17,9 +17,16 @@ h3 {
 }
 
 p {
+	font-size: 18px;
 	font-family: 'Droid Serif', serif;
 }
 
 div {
+	font-size: 18px !important;
 	font-family: 'Droid Serif', serif;
+}
+
+.mdl-card__supporting-text {
+	font-size: 18px;
+	
 }

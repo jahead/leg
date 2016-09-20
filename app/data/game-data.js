@@ -11,9 +11,9 @@ const GeneralText = {
     Forward: {
         Quote: "> Human nature is represented in the witnesses, the counsel, and the jurors. All three, in their weaknesses, have been kept in mind by the law of evidence. The multifold untrustworthinesses of witnesses; the constant partisan zeal, the lurking chicanery, the needless unpreparedness of counsel; the crude reasoning, the strong irrational emotions, the testimonial inexperience of jurors \u2013 all these elements have been considered by the law of evidence and procedure",
         QuoteRef: "-Wigmore in The Treatise (3rd edition, 8c at 262)",
-        Text: "In practice, whether the laws of evidence sufficiently guard against human fallibility is open to question. This is particularly true in the adversarial system in which people are pitted against one another in all their manifold weaknesses. The presence of the jury allows for a performative style of argument that brings qualitative analysis into play. The dangers this presents to a fair trial are checked only by the extent to which a judge can rein in a trial based on the statutory scheme governing the admissibility of evidence.  \n \n In this game, you will be required to assume the role of the judge. You will be given a number of scenarios, based on real court observations. You will then be required to assess the admissibility of what you observe in each. You will be required to base your reasoning on the Australian Uniform Evidence Act.   \n \n  When you have completed all your scenarios you will be given a score as to how well you did. Good luck your honour!"
+        Text: "In practice, whether the laws of evidence sufficiently guard against human fallibility is open to question. This is particularly true in the adversarial system in which people are pitted against one another in all their manifold weaknesses. The presence of the jury allows for a performative style of argument that brings qualitative analysis into play. The dangers this presents to a fair trial are checked only by the extent to which a judge can rein in a trial based on the statutory scheme governing the admissibility of evidence.  \n \n In this game, you will be required to assume the role of the judge. You will be given a number of scenarios, based on real court observations. You will then be required to assess the admissibility of what you observe in each. You will be required to base your reasoning on the Australian Uniform Evidence Act.   \n \n  When you have completed all your scenarios you will be given a score indicating how well you did. Good luck your honour!"
     },
-    Reflection: "All of the questions in this game are based on real observations and highlight the inherent tensions that exist between the major actors in trials. Wigram’s comment that “[a]ll three [jurors, counsel, witnesses], in their weaknesses, have been kept in mind by the law of evidence” was vindicated in our observations.  \n \n The fact that the UEA is in large part a codification of common law rules, in turn a reaction to the history of trials means that they are well placed to deal with the tensions that actually arise. The great unanswered question is whether juries follow the directions of judges and follow permissible lines of reasons. We observed that the laws of evidence effectively regulated the information that was put in front of them, but about the final judgement they arrive at, one can only speculate and hope."
+    Reflection: "All of the questions in this game are based on real observations and highlight the inherent tensions that exist between the major actors in trials. Wigram’s comment that “[a]ll three [jurors, counsel, witnesses], in their weaknesses, have been kept in mind by the law of evidence” was vindicated in our observations.  \n \n The fact that the UEA is in large part a codification of common law rules, in turn a reaction to the history of trials means that they are well placed to deal with the tensions that actually arise. The great unanswered question is whether juries follow the directions of judges and follow permissible lines of reasoning. We observed that the laws of evidence effectively regulated the information that was put in front of them, but about the final judgement they arrive at, one can only speculate and hope."
 }
 
 const scene = [
@@ -33,7 +33,7 @@ const scene = [
         facts: [
             "A number of men accused of armed robbery, extortion and the dealing cocaine and ice"
         ],
-        witness: "Cross examination of a crown witness (a police detective),",
+        witness: "Cross examination of a crown witness (a police detective).",
         lawyer: "In your opinion what standard of protection can you offer to those who come forward in cases such as this?",
         event: ""
     },
@@ -45,7 +45,7 @@ const scene = [
         ],
         witness: "",
         lawyer: "",
-        event: "The jury asked to listen to a series of personal phone calls made by the accused. In the first phone call, people involved in the crime were identified in the phone call and the drugs referenced. In the second, no mention was made of the planned crime or the specific involvement of particular individuals. However, crude remarks were made and expletives used, proving what the crown referred to as  the “unsavoury character” of the defendant."
+        event: "The jury was asked to listen to a series of personal phone calls made by the accused. In the first phone call, people involved in the crime were identified in the phone call and the drugs referenced. In the second, no mention was made of the planned crime or the specific involvement of particular individuals. However, crude remarks were made and expletives used, proving what the crown referred to as  the “unsavoury character” of the defendant."
     },
     {
         id: 4,
@@ -55,7 +55,7 @@ const scene = [
         ],
         witness: "",
         lawyer: "",
-        event: "The evidence in issue: Allegation that when they moved house he started saying things of a sexual nature."
+        event: "Allegation that when they moved house the accused started saying things of a sexual nature."
     },
     {
         id: 5,
@@ -65,7 +65,7 @@ const scene = [
         ],
         witness: "",
         lawyer: "",
-        event: "The evidence in issue: Evidence that the accused made a habit of smacking the victim on the bum"
+        event: "Evidence that the accused made a habit of smacking the victim on the backside."
     },
     {
         id: 6,
@@ -95,7 +95,7 @@ const scene = [
         ],
         witness: "Cross examination of a crown witness (police detective).",
         lawyer: "",
-        event: "The defence keeps asking whether something is the witness’ “understanding”, or whether something was correct “to your knowledge,” thereby seeking to characterize the witness’ testimony as subjective belief rather than objective fact."
+        event: "The defence keeps asking whether something is the witness’ “understanding”, or whether something was correct “to your knowledge,” thereby seeking to characterise the witness’ testimony as subjective belief rather than objective fact."
     },
     {
         id: 9,
@@ -115,7 +115,7 @@ const scene = [
         ],
         witness: "Cross examination of a crown witness (police detective).",
         lawyer: "",
-        event: "During cross-examination, the defence counsel asked “detective, you neglected to take DNA evidence from the room in which the weed was found, correct?"
+        event: "During cross-examination, the defence counsel asked “detective, you neglected to take DNA evidence from the room in which the weed was found, correct?”"
     },
     {
         id: 11,
@@ -135,7 +135,7 @@ const scene = [
         ],
         witness: "A sentencing interview: defence calling convicted man as its own witness.",
         lawyer: "",
-        event: "The defence asked the following leading question: “you joined the gang after the drugs had already been supplied, didn’t you?"
+        event: "The defence asked the following leading question: “you joined the gang after the drugs had already been supplied, didn’t you?”"
     },
     {
         id: 13,
@@ -165,7 +165,7 @@ const scene = [
         ],
         witness: "Cross-examination of the accused.",
         lawyer: "",
-        event: "The crown, during cross-examination and becoming frustrated by the accused’s inability to make out a number plate in a photograph said “can you get your glasses? Did you not think you would need them?” in a condescending manner."
+        event: "The crown, during cross-examination and becoming frustrated by the accused’s inability to make out a number plate in a photograph, said “can you get your glasses? Did you not think you would need them?” in a condescending manner."
     },
     {
         id: 16,
@@ -196,7 +196,7 @@ const Questions = [
     {
         id: 1,
         scene: 1,
-        question: "What is the defence allowed to ask?",
+        question: "Is this a permissible question?",
         options: [
             {
                 id: 1,
@@ -424,7 +424,7 @@ const Questions = [
             }
         ],
         answer: 2,
-        reason: 'objections can only be made to leading questions during examination in chief or re-examination, not cross examination: s 37(1). By not allowing the convicted man to speak, only to agree or disagree with the propositions he put, the crown effectively excludes any mitigating circumstances that might problematise a simple binary response. For example, he agreed he had maintained contact with one of the other members of the enterprise, but was not allowed to give the context in which this occurred, who had initiated the meeting or what had transpired. This can be partly rectified during a reexamination, but the defence counsel failed to bring it up.'
+        reason: 'Objections can only be made to leading questions during examination in chief or re-examination, not cross examination: s 37(1). By not allowing the convicted man to speak, only to agree or disagree with the propositions he put, the crown effectively excludes any mitigating circumstances that might problematise a simple binary response. For example, he agreed he had maintained contact with one of the other members of the enterprise, but was not allowed to give the context in which this occurred, who had initiated the meeting or what had transpired. This can be partly rectified during a reexamination, but the defence counsel failed to bring it up.'
     },
     {
         id: 14,
